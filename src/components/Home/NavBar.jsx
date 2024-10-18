@@ -26,10 +26,10 @@ const NavBar = () => {
     ]
 
   return (
-    <div className='flex mx-28 py-10 justify-between'>
+    <div className='flex mx-5 lg:mx-28 py-10 justify-between'>
         <div><h1 className='text-4xl text-white font-semibold'><a href='/'>Dremy</a></h1></div>
         <div >
-          <ul className='flex gap-10 text-white text-xl mt-2 '>
+          <ul className=' hidden lg:flex gap-10 text-white text-xl mt-2 '>
             {menuItems.map((menu,index)=>(
                 <li className=' hover:text-slate-400' key={index}>
                     <a href={menu.path}>{menu.link}</a>
@@ -38,7 +38,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div>
-            <button className='bg-purple-950 px-7 py-2 rounded text-white'>Sign In</button>
+            <button className='bg-indigo-950 px-7 py-2 rounded text-white'>Sign In</button>
         </div>
     </div>
   )
