@@ -29,7 +29,7 @@ const Data = [
 ]
 
   return (
-    <div className='bg-slate-200 px-28 py-14'>
+    <div className='bg-slate-200 px-10 lg:px-28 py-14'>
         {/*Heading and description*/}
         <div className='text-center mb-5'>
         <h1 className=' text-4xl  font-bold mb-3'>Achievememt</h1>

@@ -6,7 +6,7 @@ import SearchBox from './SearchBox'
 
 const Home = () => {
   return (
-    <div className='h-screen w-full bg-cover' style={{backgroundImage:`url(${HomeImage})`}}>
+    <div className=' h-screen w-full bg-cover' style={{backgroundImage:`url(${HomeImage})`}}>
       <div className='relative h-screen bg-black/60'>
         <NavBar/>
         <Intro />

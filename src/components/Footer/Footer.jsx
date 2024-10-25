@@ -22,8 +22,8 @@ const Footer = () => {
   return (
     <div className='mt-10'>
         {/*Footer content */}
-        <div className='flex px-24 py-10'>
-            <div className='flex flex-col gap-5'>
+        <div className='flex flex-wrap lg:flex-nowrap gap-10 px-10 py-10 lg:px-24 lg:py-10 bg-slate-100'>
+            <div className='flex flex-col gap-5 pr-32'>
                 <h2 className='text-4xl font-bold'>Dremy</h2>
                 <p className='text-slate-600 flex-col gap-2'>People most commonly get pets<br/>
                 for companionship,to protect a <br/>
@@ -35,20 +35,22 @@ const Footer = () => {
                         <a className='border border-blue-950  p-1 rounded-full hover:scale-125 duration-300'><TiSocialTwitter className='w-10 h-10' /></a>
                 </div>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-20'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-32'>
                  {footerData.map((data,index)=>(
                      <div key={index} className='flex flex-col gap-5'>
                           <p className='text-xl font-bold'>{data.title}</p>
-                         <p> {footerData.links.map((link,index)=>(
-                            <a key={index}>{link}</a>
-                          ))}</p>
+                          <ul className='flex flex-col gap-5'> {data.links.map((link,i)=>(
+                            <a className=' text-gray-600 hover:text-black cursor-pointer' key={i}>{link}</a>
+                          ))}</ul>
                       
                      </div>
                  ))}
             </div>
         </div>
         {/*Copyrights area */}
-        <div></div>
+        <div className='bg-indigo-950 text-slate-200 py-5 text-center'>
+            Copyright @ 2023 Dremy All rights reserved
+        </div>
     </div>
   )
 }

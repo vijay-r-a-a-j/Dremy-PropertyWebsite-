@@ -14,10 +14,10 @@ const Pricing = () => {
                 and error to successful.</p>
             </div>
             <div className='p-2 rounded-md bg-slate-200 w-72 mx-auto mt-5'>
-                <button  className={`px-10 py-2 rounded-md transition-all ease-out duration-300 ${isAnually?'bg-indigo-950 text-white':""}`} onClick={()=>setIsAnually(true)}>Anually</button>
-                <button className={`px-10 py-2 rounded-md transition-all ease-out  duration-300 ${isAnually?"":'bg-indigo-950 text-white'} `} onClick={()=>setIsAnually(false)}>Monthly</button>
+                <button  className={`px-10 py-2 rounded-md  ${isAnually?'bg-indigo-950 text-white':""}`} onClick={()=>setIsAnually(!isAnually)}>Anually</button>
+                <button className={`px-10 py-2 rounded-md  ${isAnually?"":'bg-indigo-950 text-white'} `} onClick={()=>setIsAnually(!isAnually)}>Monthly</button>
             </div>
-            <PriceCrads isAnually={isAnually} setIsAnually={setIsAnually}/>
+            <PriceCrads isAnually={isAnually} />
         </div>
         
     </div>
