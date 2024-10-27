@@ -23,7 +23,7 @@ const Footer = () => {
     <div className='mt-10'>
         {/*Footer content */}
         <div className='flex flex-wrap lg:flex-nowrap gap-10 px-10 py-10 lg:px-24 lg:py-10 bg-slate-100'>
-            <div className='flex flex-col gap-5 pr-32'>
+            <div className='flex flex-col gap-5 lg:pr-32'>
                 <h2 className='text-4xl font-bold'>Dremy</h2>
                 <p className='text-slate-600 flex-col gap-2'>People most commonly get pets<br/>
                 for companionship,to protect a <br/>

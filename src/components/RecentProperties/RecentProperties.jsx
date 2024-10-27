@@ -74,7 +74,7 @@ const RecentProperties = () => {
                     </div>
                 </div>
                 <div className='flex mb-2 justify-between'>
-                  <p className='flex'><p className='my-auto'><IoLocationSharp /></p><p className=' text-slate-600 my-auto'>{item.location}</p></p>
+                  <p className='flex'><span className='my-auto'><IoLocationSharp /></span><span className=' text-slate-600 my-auto'>{item.location}</span></p>
                   <button className='px-7 py-1 bg-blue-950 text-white rounded'>View</button>
                 </div>
               </div>
