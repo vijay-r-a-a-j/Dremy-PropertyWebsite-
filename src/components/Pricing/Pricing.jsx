@@ -6,7 +6,7 @@ const Pricing = () => {
   const [isAnually, setIsAnually] = useState(false)
 
   return (
-    <div className=' p-5 md:p-10 lg:p-20 '>
+    <div className=' p-5 md:p-10 lg:p-20' id='pages'>
         <div >
             <div className='text-center'>
                 <h1 className='text-4xl font-bold mb-5'>Our Plan For Your Stratagies</h1>

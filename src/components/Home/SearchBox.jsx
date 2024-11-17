@@ -11,10 +11,10 @@ const SearchBox = () => {
   const [value,setValue] = useState('Buy')
 
   return (
-    <div className='w-auto flex flex-wrap lg:flex-nowrap lg:mx-auto lg:w-[50%] py-2 bg-white mt-5 lg:mt-20 rounded-md'>
+    <div className='w-auto flex flex-wrap lg:flex-nowrap md:mx-auto md:w-[75%] lg:w-[50%] py-2 bg-white mt-5 lg:mt-20 rounded-md'>
       
       {/*Radio Buttons */}
-      <div className='flex gap-7 py-3 px-5    lg:border-r-4'>
+      <div className='flex gap-7 py-3 px-5 mx-auto md:mx-0   md:border-r-4'>
         {items.map((item)=>(
           <div className='flex gap-2 ' key={item.value}>
             <input
@@ -32,7 +32,7 @@ const SearchBox = () => {
 
       </div>
       {/*Search box */}
-      <div  className='hidden lg:flex '>
+      <div  className='hidden md:flex '>
         <p className='my-auto mx-2'><SlLocationPin className='' /></p>
         <form  className='py-3 lg:pr-28 '>
           <input
@@ -42,7 +42,7 @@ const SearchBox = () => {
            placeholder='Search for a property'
           />
         </form>
-        <button className='px-5 py-3 bg-indigo-950 text-gray-400 rounded '>Search</button>
+        <button className='md:px-6 hover:scale-105 lg:px-5 py-3 bg-indigo-950 text-gray-400 rounded '>Search</button>
       </div>
     </div>
   )

@@ -41,7 +41,7 @@ const RecentProperties = () => {
     }
   ]
   return (
-    <div className='bg-slate-200'>
+    <div className='bg-slate-200' id='listings'>
         <div className=' py-10 px-2 md:p-10 lg:p-28'>
           {/*Title and description */}
           <div className='text-center'>
