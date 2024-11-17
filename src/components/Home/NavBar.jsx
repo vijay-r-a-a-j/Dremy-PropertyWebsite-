@@ -33,9 +33,11 @@ const NavBar = () => {
     <div className='flex mx-5 lg:mx-28 py-10 justify-between'>
         <div><h1 className='text-4xl text-white font-semibold'><a href='/'>Dremy</a></h1></div>
         <div >
-          <ul className={`flex flex-col lg:flex-row gap-5 lg:gap-10  text-xl h-screen lg:h-auto mt-12 lg:mt-2 absolute lg:static left-0
-                  backdrop-blur-xl text-white lg:backdrop-blur-none  lg:text-white w-full py-10 lg:py-0 px-5 transition-all duration-500 ease-in
-                   ${open?"left-0":"left-[-800px] md:left-[-1000px]"}`}>
+          <ul className={`flex flex-col lg:flex-row gap-5 lg:gap-10  text-xl 
+                            h-screen lg:h-auto mt-12 lg:mt-2 absolute lg:static left-0
+                              backdrop-blur-xl text-white lg:backdrop-blur-none 
+                                lg:text-white w-full py-10 lg:py-0 px-5 transition-all duration-500 ease-in
+                                     ${open?"left-0":"left-[-800px] md:left-[-1000px]"}`}>
             {menuItems.map((menu,index)=>(
                 <li className=' hover:text-slate-400 hover:scale-105 duration-300' key={index}>
                     <a href={menu.path}>{menu.link}</a>
